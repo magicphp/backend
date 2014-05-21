@@ -1,0 +1,22 @@
+{
+    "name": "magicphp/backend",
+    "description": "The simplest framework for PHP, create project like magic",
+    "keywords": ["framework", "magicphp", "backend"],
+    "homepage": "https://magicphp.org",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "André Ferreira",
+            "email": "andrehrf@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "magicphp/framework": "1.*",
+        "magicphp/db": "*",
+        "phpmailer/phpmailer": "v5.2.8"
+    },
+    "autoload": {
+        "psr-0": { "magicphp": "." }
+    }
+}

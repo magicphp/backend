@@ -1,0 +1,79 @@
+body{
+    background-color: #EFEFEF;
+    font-family: Verdana, Geneva, sans-serif;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    min-width: 700px;
+}
+
+a{
+    font-size: 12px;
+    color: #666;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.baLoginBox{
+    position: absolute;
+    width: 300px;
+    height: 160px;
+    border: 1px solid #CCC;
+    left: 50%;
+    top: 15%;
+    margin-left: -150px;
+    background: #FFF;
+    padding: 20px;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow: 0 0 5px #CCC;
+    -webkit-box-shadow: 0 0 5px #CCC;
+    box-shadow: 0 0 5px #CCC;
+}
+
+.baLoginBox img{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.baLoginBox input[type=text], .baLoginBox input[type=password]{
+    width: 250px;
+    color: #666;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #CCC;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 12px; 
+    margin-bottom: 12px;
+}
+
+.baEsqueci{
+    width: 280px;
+    text-align: right;
+}
+
+.baLoginBox input[type=submit]{
+    background-color: #efefef;
+    margin: 5px;
+    margin-top: 40px;
+    width: 250px;
+    color: #666;
+    padding: 5px;
+    border: 1px solid #CCC;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 12px; 
+    margin-bottom: 12px;
+    cursor: pointer
+}
+
+.baLoginBox input[type=submit]:hover{
+    background-color: #dbdbdb;
+}
