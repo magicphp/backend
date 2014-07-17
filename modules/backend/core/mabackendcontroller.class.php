@@ -18,17 +18,17 @@
          * @return void
          */
         public static function SetBackendStaticRoutes($sPrefix, $sUsercase, $oDb){                                        
-            if(maPrivileges::AuthorizedAccess($sUsercase, "insert"))
+            //if(maPrivileges::AuthorizedAccess($sUsercase, "insert"))
                 Routes::Set($sPrefix."-insert", "POST", array("ioBackendController::Insert", $oDb)); 
                     
-            if(maPrivileges::AuthorizedAccess($sUsercase, "edit")){
+            //if(maPrivileges::AuthorizedAccess($sUsercase, "edit")){
                 Routes::Set($sPrefix."-switchbuttom", "PUT", array("ioBackendController::SwitchButtom", $oDb));
                 Routes::Set($sPrefix."-editinplace", "PUT", array("ioBackendController::EditInPlace", $oDb));
                 Routes::Set($sPrefix."-edit", "PUT", array("ioBackendController::Edit", $oDb));
                 Routes::Set($sPrefix."-order", "PUT", array("ioBackendController::Order", $oDb));
-            }
+            //}
             
-            if(maPrivileges::AuthorizedAccess($sUsercase, "delete"))
+            //if(maPrivileges::AuthorizedAccess($sUsercase, "delete"))
                 Routes::Set($sPrefix."-remove/{id}", "DELETE", array("ioBackendController::Remove", $oDb));
         }
         

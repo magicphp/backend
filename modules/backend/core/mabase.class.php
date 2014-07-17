@@ -47,7 +47,7 @@
                                         $aUser = $aData[0];
                                         Session::Login($aUser["id"], $aUser["email"], $aUser["name"], 28800, true);
                                         Session::Set("user.privileges", $aUser["privileges"]);
-                                        ioPrivileges::LoadPrivileges();
+                                        maPrivileges::LoadPrivileges();
                                         Output::Redirect(Storage::Join("route.root", "adm"));
                                     }
                                 });            
